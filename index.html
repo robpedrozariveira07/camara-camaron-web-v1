@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cámara Camarón · Cocina del Mar en Portales, CDMX</title>
+<meta name="description" content="Marisquería familiar con más de 15 años en la colonia Portales. Cócteles, caldos, tacos, tostadas y pescados. Victor Hugo 88, a unas cuadras del Metro Portales. Tostada gratis en tu primera visita.">
+<meta property="og:title" content="Cámara Camarón · Cocina del Mar en Portales">
+<meta property="og:description" content="Mariscos frescos en Portales, CDMX. Tostada gratis en tu primera visita (en la compra de otra).">
+<meta property="og:image" content="img/coctel.jpg">
+<meta property="og:type" content="restaurant">
+<meta name="theme-color" content="#2f3a8f">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Cámara Camarón",
+  "description": "Cocina del Mar. Marisquería familiar en la colonia Portales.",
+  "servesCuisine": ["Mariscos", "Mexicana"],
+  "image": "img/coctel.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Victor Hugo 88",
+    "addressLocality": "Col. Portales, Benito Juárez",
+    "addressRegion": "CDMX",
+    "postalCode": "03300",
+    "addressCountry": "MX"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "11:00", "closes": "19:00"
+  }],
+  "sameAs": ["https://www.instagram.com/mariscoscamaracamaron/", "https://www.facebook.com/113266168733227"]
+}
+</script>
+
+<style>
+:root{
+  --navy:#2f3a8f;
+  --navy-deep:#1f2766;
+  --orange:#ee6a30;
+  --orange-dark:#d45520;
+  --blue:#4595cf;
+  --sky:#6fbde6;
+  --foam:#eef7fc;
+  --sand:#fff8f1;
+  --ink:#1c2140;
+  --muted:#5b6283;
+  --white:#ffffff;
+  --radius:18px;
+  --shadow:0 10px 30px rgba(31,39,102,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{font-family:'Nunito',system-ui,sans-serif;color:var(--ink);background:var(--sand);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:'Baloo 2',system-ui,sans-serif;line-height:1.1;color:var(--navy)}
+.wrap{width:min(1140px,100% - 32px);margin-inline:auto}
+section{padding:88px 0}
+.eyebrow{display:inline-block;font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--orange)}
+.section-title{font-size:clamp(2rem,4.5vw,3rem);margin:.3em 0 .35em}
+.lead{color:var(--muted);font-size:1.08rem;max-width:620px}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;gap:.55em;font-weight:800;text-decoration:none;border-radius:999px;padding:.95em 1.6em;font-size:1rem;transition:transform .15s ease,box-shadow .15s ease,background .15s ease;border:2px solid transparent;cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--orange);color:var(--white);box-shadow:0 8px 22px rgba(238,106,48,.35)}
+.btn-primary:hover{background:var(--orange-dark)}
+.btn-ghost{border-color:currentColor;color:var(--white)}
+.btn-navy{background:var(--navy);color:var(--white)}
+.btn-outline{border-color:var(--navy);color:var(--navy)}
+.btn svg{width:1.2em;height:1.2em;flex:none}
+
+/* Header */
+header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(10px);border-bottom:1px solid rgba(47,58,143,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.nav-logo img{height:52px;width:auto}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{text-decoration:none;font-weight:700;color:var(--navy);font-size:.97rem}
+.nav-links a:hover{color:var(--orange)}
+.nav .btn{padding:.7em 1.2em;font-size:.92rem}
+@media (max-width:860px){.nav-links{display:none}}
+@media (max-width:420px){.nav .btn span.long{display:none}}
+
+/* Hero */
+.hero{position:relative;min-height:calc(100svh - 72px);display:flex;align-items:center;padding:56px 0 110px;color:var(--white);overflow:hidden;
+  background:radial-gradient(900px 600px at 85% 30%,rgba(111,189,230,.28),transparent 60%),radial-gradient(700px 500px at 10% 90%,rgba(69,149,207,.25),transparent 60%),linear-gradient(160deg,#2f3a8f 0%,#1f2766 100%)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.07;background-image:radial-gradient(#fff 1.2px,transparent 1.2px);background-size:22px 22px;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;position:relative;z-index:1}
+.hero-content{max-width:600px}
+.hero .eyebrow{color:var(--sky)}
+.hero h1{color:var(--white);font-size:clamp(2.4rem,5.4vw,4rem);font-weight:800;margin:.25em 0 .35em}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p.sub{font-size:1.15rem;opacity:.93;max-width:520px}
+.promo-pill{display:inline-flex;align-items:center;gap:.6em;background:var(--white);color:var(--navy);font-weight:800;border-radius:999px;padding:.55em 1.1em .55em .6em;margin-top:26px;box-shadow:var(--shadow);font-size:.98rem}
+.promo-pill b{background:var(--orange);color:var(--white);border-radius:999px;padding:.2em .7em;font-size:.82rem;letter-spacing:.05em}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+
+/* Hero slider */
+.hero-visual{position:relative;justify-self:center;width:min(460px,100%);will-change:transform}
+.hero-visual::before{content:"";position:absolute;width:78%;aspect-ratio:1;border-radius:50%;background:var(--orange);right:-12%;top:-8%;opacity:.95}
+.hero-visual::after{content:"";position:absolute;width:42%;aspect-ratio:1;border-radius:50%;border:3px dashed rgba(111,189,230,.6);left:-14%;bottom:-6%}
+.slider{position:relative;aspect-ratio:4/5;border-radius:28px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.4);border:6px solid #fff;background:#fff;z-index:1}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.1s ease}
+.slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.02)}
+.slide.on{opacity:1}
+.slide.on img{animation:kb 6.5s ease-out forwards}
+@keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.12)}}
+.slide figcaption{position:absolute;left:14px;bottom:14px;background:rgba(255,255,255,.95);color:var(--navy);font-family:'Baloo 2',system-ui,sans-serif;font-weight:800;font-size:1.05rem;padding:.3em .9em;border-radius:999px;box-shadow:0 6px 16px rgba(0,0,0,.18)}
+.dots{position:absolute;right:16px;top:16px;display:flex;gap:6px;z-index:2}
+.dots button{width:9px;height:9px;border-radius:50%;border:0;background:rgba(255,255,255,.6);cursor:pointer;padding:0;transition:width .3s,background .3s}
+.dots button.on{width:24px;border-radius:999px;background:var(--orange)}
+.badge-free{position:absolute;z-index:2;left:-26px;top:22px;width:108px;height:108px;border-radius:50%;background:#fff;color:var(--navy);display:grid;place-items:center;text-align:center;font-family:'Baloo 2',system-ui,sans-serif;font-weight:800;line-height:1;box-shadow:0 12px 28px rgba(0,0,0,.28);transform:rotate(-10deg);animation:bob 3.5s ease-in-out infinite}
+.badge-free span{font-size:.78rem;color:var(--orange);letter-spacing:.04em}
+.badge-free strong{font-size:1.45rem;display:block}
+@keyframes bob{0%,100%{transform:rotate(-10deg) translateY(0)}50%{transform:rotate(-6deg) translateY(-8px)}}
+.wave{position:absolute;left:0;right:0;bottom:-1px;line-height:0}
+.wave svg{width:100%;height:70px;display:block}
+@media (max-width:900px){
+  .hero{padding:32px 0 96px;min-height:auto}
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-visual{order:-1;width:min(380px,82%)}
+  .slider{aspect-ratio:1/1}
+  .badge-free{width:88px;height:88px;left:-18px;top:12px}
+  .badge-free strong{font-size:1.2rem}
+}
+@media (prefers-reduced-motion:reduce){.slide.on img,.badge-free{animation:none}}
+
+/* Facts */
+.facts{padding:0;margin-top:-8px}
+.facts-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fact{background:var(--white);border-radius:var(--radius);padding:22px 20px;box-shadow:var(--shadow);display:flex;gap:14px;align-items:center}
+.fact .ico{width:46px;height:46px;border-radius:14px;background:var(--foam);display:grid;place-items:center;font-size:1.45rem;flex:none}
+.fact strong{display:block;font-family:'Baloo 2';font-size:1.15rem;color:var(--navy);line-height:1.15}
+.fact span{font-size:.9rem;color:var(--muted)}
+@media (max-width:900px){.facts-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:480px){.facts-grid{grid-template-columns:1fr}}
+
+/* Specialties */
+.dishes{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+.dish{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.dish .ph{aspect-ratio:4/5;overflow:hidden}
+.dish .ph img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.dish:hover .ph img{transform:scale(1.05)}
+.dish .body{padding:16px 18px 20px}
+.dish h3{font-size:1.25rem}
+.dish p{font-size:.92rem;color:var(--muted);margin-top:4px}
+@media (max-width:980px){.dishes{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:420px){.dishes{gap:12px}.dish .body{padding:12px 12px 16px}.dish h3{font-size:1.08rem}.dish p{font-size:.84rem}}
+
+/* Promo */
+.promo{background:var(--navy);color:var(--white);position:relative;overflow:hidden}
+.promo::after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(111,189,230,.25),transparent 70%);right:-160px;top:-160px}
+.promo-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center;position:relative;z-index:1}
+.promo h2{color:var(--white);font-size:clamp(2.2rem,5vw,3.4rem)}
+.promo h2 span{color:var(--orange)}
+.promo .lead{color:rgba(255,255,255,.85)}
+.steps{list-style:none;margin:28px 0 30px;display:grid;gap:14px}
+.steps li{display:flex;gap:14px;align-items:flex-start;font-size:1.04rem}
+.steps .n{flex:none;width:34px;height:34px;border-radius:50%;background:var(--orange);display:grid;place-items:center;font-weight:800;font-family:'Baloo 2'}
+.fine{font-size:.85rem;opacity:.75;margin-top:16px}
+.promo-img{border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(0,0,0,.35);transform:rotate(2deg);position:relative}
+.promo-img img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.promo-img .tag{position:absolute;left:18px;top:18px;background:var(--orange);color:var(--white);font-family:'Baloo 2';font-weight:800;font-size:1.3rem;padding:.25em .8em;border-radius:12px;transform:rotate(-4deg)}
+@media (max-width:860px){.promo-grid{grid-template-columns:1fr;gap:36px}.promo-img{transform:none}}
+
+/* Menu */
+.menu{background:var(--foam)}
+.menu-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.cat{background:var(--white);border-radius:var(--radius);padding:24px 24px 22px;box-shadow:0 4px 14px rgba(31,39,102,.06)}
+.cat h3{font-size:1.4rem;display:flex;align-items:center;gap:.4em;margin-bottom:10px}
+.cat h3 i{font-style:normal}
+.cat ul{list-style:none}
+.cat li{padding:7px 0;border-bottom:1px dashed rgba(47,58,143,.15);font-weight:600;font-size:.97rem}
+.cat li:last-child{border-bottom:0}
+.cat li small{display:block;font-weight:400;color:var(--muted);font-size:.84rem}
+.menu-note{margin-top:28px;background:var(--white);border-left:5px solid var(--orange);border-radius:12px;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.menu-note p{font-weight:700;color:var(--navy)}
+@media (max-width:980px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.menu-grid{grid-template-columns:1fr}}
+
+/* Gallery strip */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:40px}
+.strip img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:14px}
+@media (max-width:700px){.strip{grid-template-columns:repeat(2,1fr)}}
+
+/* Visit */
+.visit-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:36px;align-items:stretch;margin-top:36px}
+.info{display:grid;gap:14px;align-content:start}
+.info-card{background:var(--white);border-radius:var(--radius);padding:20px 22px;box-shadow:var(--shadow);display:flex;gap:16px}
+.info-card .ico{width:44px;height:44px;border-radius:12px;background:var(--foam);display:grid;place-items:center;font-size:1.3rem;flex:none}
+.info-card h3{font-size:1.15rem;margin-bottom:2px}
+.info-card p{color:var(--muted);font-size:.97rem}
+.info .btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+.map{border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:380px;background:var(--foam)}
+.map iframe{width:100%;height:100%;min-height:380px;border:0;display:block}
+@media (max-width:860px){.visit-grid{grid-template-columns:1fr}}
+
+/* FAQ */
+.faq{background:var(--white)}
+.faq-list{max-width:780px;margin-top:32px}
+details{border-bottom:1px solid rgba(47,58,143,.12);padding:18px 0}
+summary{cursor:pointer;font-weight:800;font-size:1.08rem;color:var(--navy);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:1.5rem;line-height:1;color:var(--orange);transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--muted);margin-top:10px;max-width:680px}
+
+/* Footer */
+footer{background:var(--navy-deep);color:rgba(255,255,255,.82);padding:56px 0 110px}
+.foot{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:32px;align-items:start}
+.foot img{height:78px;width:auto;background:var(--white);border-radius:14px;padding:8px 12px}
+.foot h4{font-family:'Baloo 2';color:var(--white);font-size:1.15rem;margin-bottom:8px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--sky)}
+.socials{display:flex;gap:10px;margin-top:6px}
+.socials a{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.1);display:grid;place-items:center}
+.socials a:hover{background:var(--orange)}
+.socials svg{width:20px;height:20px;fill:#fff}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding-top:20px;font-size:.85rem;opacity:.7}
+@media (max-width:760px){.foot{grid-template-columns:1fr}}
+
+/* Mobile sticky CTA */
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;gap:10px}
+.mbar a{flex:1;justify-content:center;padding:.9em .8em;white-space:nowrap;font-size:.95rem;box-shadow:0 10px 28px rgba(0,0,0,.25)}
+@media (max-width:760px){.mbar{display:flex}}
+
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#inicio" class="nav-logo" aria-label="Cámara Camarón, inicio"><img src="img/logo.png" alt="Cámara Camarón · Cocina del Mar"></a>
+    <ul class="nav-links">
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#promo">Promoción</a></li>
+      <li><a href="#menu">Menú</a></li>
+      <li><a href="#visitanos">Visítanos</a></li>
+    </ul>
+    <a class="btn btn-primary js-msg" href="#" data-ref="web_header">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.44 3.14 7.17.16.15.26.35.27.57l.05 1.78a.8.8 0 0 0 1.12.71l1.99-.88a.8.8 0 0 1 .53-.04c.91.25 1.88.39 2.9.39 5.64 0 10-4.13 10-9.7S17.64 2 12 2Zm6 7.46-2.94 4.66a1.5 1.5 0 0 1-2.17.4l-2.34-1.75a.6.6 0 0 0-.72 0l-3.16 2.4c-.42.32-.97-.18-.69-.63l2.94-4.66a1.5 1.5 0 0 1 2.17-.4l2.34 1.75a.6.6 0 0 0 .72 0l3.16-2.4c.42-.32.97.18.69.63Z"/></svg>
+      <span>Escríbenos</span>
+    </a>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-content">
+        <span class="eyebrow">Cocina del Mar · Col. Portales, CDMX</span>
+        <h1>Mariscos como en la costa, <em>aquí en Portales</em></h1>
+        <p class="sub">Negocio familiar con más de 15 años sirviendo cócteles, caldos, tacos, tostadas y pescados preparados al momento.</p>
+        <div class="promo-pill"><b>1ª VISITA</b> Tostada GRATIS en la compra de otra 🦐</div>
+        <div class="hero-ctas">
+          <a class="btn btn-primary js-msg" href="#" data-ref="web_hero">Quiero mi tostada gratis</a>
+          <a class="btn btn-ghost" href="#menu">Ver menú</a>
+        </div>
+      </div>
+      <div class="hero-visual" id="heroVisual">
+        <div class="badge-free" aria-hidden="true"><div><span>TOSTADA</span><strong>GRATIS</strong><span>1ª VISITA</span></div></div>
+        <div class="slider" id="slider" aria-roledescription="carrusel" aria-label="Nuestros platillos">
+          <figure class="slide on"><img src="img/coctel.jpg" alt="Cóctel de camarón" fetchpriority="high"><figcaption>Cóctel de camarón</figcaption></figure>
+          <figure class="slide"><img src="img/caldo.jpg" alt="Caldo de camarón"><figcaption>Caldo de camarón</figcaption></figure>
+          <figure class="slide"><img src="img/camarones-coco.jpg" alt="Camarones al coco"><figcaption>Camarones al coco</figcaption></figure>
+          <figure class="slide"><img src="img/tostada-camaron.jpg" alt="Tostada de camarón"><figcaption>Tostada Cámara Camarón</figcaption></figure>
+          <figure class="slide"><img src="img/mojarra.jpg" alt="Mojarra"><figcaption>Mojarra</figcaption></figure>
+          <figure class="slide"><img src="img/taco-ensenada.jpg" alt="Taco estilo Ensenada"><figcaption>Tacos estilo Ensenada</figcaption></figure>
+          <figure class="slide"><img src="img/michelada.jpg" alt="Michelada con camarón"><figcaption>Michelada con camarón</figcaption></figure>
+          <div class="dots" id="dots"></div>
+        </div>
+      </div>
+    </div>
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 70" preserveAspectRatio="none"><path fill="#fff8f1" d="M0,40 C180,70 360,10 540,30 C720,50 900,70 1080,45 C1260,20 1350,30 1440,38 L1440,70 L0,70 Z"/></svg>
+    </div>
+  </section>
+
+  <!-- FACTS -->
+  <section class="facts">
+    <div class="wrap facts-grid">
+      <div class="fact reveal"><div class="ico">🏡</div><div><strong>Negocio familiar</strong><span>Más de 15 años en Portales</span></div></div>
+      <div class="fact reveal"><div class="ico">🦐</div><div><strong>Hecho al momento</strong><span>Cócteles, caldos y tacos del mar</span></div></div>
+      <div class="fact reveal"><div class="ico">🌿</div><div><strong>Terraza</strong><span>Para comer al aire libre</span></div></div>
+      <div class="fact reveal"><div class="ico">🛵</div><div><strong>A domicilio</strong><span>Pregunta por mensaje</span></div></div>
+    </div>
+  </section>
+
+  <!-- SPECIALTIES -->
+  <section id="especialidades">
+    <div class="wrap">
+      <span class="eyebrow">Lo que más se pide</span>
+      <h2 class="section-title">Nuestras especialidades</h2>
+      <p class="lead">Del mar a tu mesa. Estos son los platillos que nuestros clientes no dejan de pedir.</p>
+      <div class="dishes">
+        <article class="dish reveal"><div class="ph"><img src="img/coctel.jpg" alt="Cóctel de camarón" loading="lazy"></div><div class="body"><h3>Cóctel de camarón</h3><p>El clásico: camarón, aguacate y cilantro en copa, con galletas.</p></div></article>
+        <article class="dish reveal"><div class="ph"><img src="img/caldo.jpg" alt="Caldo de camarón" loading="lazy"></div><div class="body"><h3>Caldo de camarón</h3><p>Caldito rojo, camarones enteros y limón. El que te levanta.</p></div></article>
+        <article class="dish reveal"><div class="ph"><img src="img/camarones-coco.jpg" alt="Torre de camarones al coco" loading="lazy"></div><div class="body"><h3>Camarones al coco</h3><p>Crujientes, servidos en torre. Para compartir (o no).</p></div></article>
+        <article class="dish reveal"><div class="ph"><img src="img/mojarra.jpg" alt="Mojarra con arroz y ensalada" loading="lazy"></div><div class="body"><h3>Mojarra</h3><p>Mojarra entera con arroz, ensalada y su toque de la casa.</p></div></article>
+        <article class="dish reveal"><div class="ph"><img src="img/tostada-camaron.jpg" alt="Tostada de camarón con aguacate" loading="lazy"></div><div class="body"><h3>Tostada Cámara Camarón</h3><p>La tostada de la casa, con camarón fresco y aguacate.</p></div></article>
+        <article class="dish reveal"><div class="ph"><img src="img/taco-ensenada.jpg" alt="Taco de pescado estilo Ensenada" loading="lazy"></div><div class="body"><h3>Tacos estilo Ensenada</h3><p>Pescado o camarón capeado, col morada y pico de gallo.</p></div></article>
+        <article class="dish reveal"><div class="ph"><img src="img/empanada.jpg" alt="Empanada horneada de camarón" loading="lazy"></div><div class="body"><h3>Empanada horneada</h3><p>De camarón, marlín o atún, con aguacate.</p></div></article>
+        <article class="dish reveal"><div class="ph"><img src="img/michelada.jpg" alt="Michelada con camarones" loading="lazy"></div><div class="body"><h3>Michelada con camarón</h3><p>Bien escarchada, con camarones en el borde.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section id="promo" class="promo">
+    <div class="wrap promo-grid">
+      <div>
+        <span class="eyebrow">Promoción de bienvenida</span>
+        <h2>Tu primera tostada <span>va por nuestra cuenta</span></h2>
+        <p class="lead">En tu primera visita te regalamos una tostada en la compra de otra. Así de fácil:</p>
+        <ol class="steps">
+          <li><span class="n">1</span><span>Escríbenos por mensaje y dinos qué día nos visitas.</span></li>
+          <li><span class="n">2</span><span>Te mandamos tu código y te apartamos lugar.</span></li>
+          <li><span class="n">3</span><span>Muéstralo al llegar y disfruta tu tostada gratis.</span></li>
+        </ol>
+        <a class="btn btn-primary js-msg" href="#" data-ref="web_promo">Quiero mi tostada gratis</a>
+        <p class="fine">Válido en tu primera visita, en la compra de otra tostada. Promoción sujeta a cambios sin previo aviso.</p>
+      </div>
+      <div class="promo-img reveal">
+        <span class="tag">¡GRATIS!</span>
+        <img src="img/tostada-chipotle.jpg" alt="Tostada de camarón con crema de chipotle" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="menu">
+    <div class="wrap">
+      <div class="menu-head">
+        <div>
+          <span class="eyebrow">Carta</span>
+          <h2 class="section-title">Nuestro menú</h2>
+          <p class="lead">Tacos con tortilla de maíz o de harina. Pregúntanos por los especiales del día.</p>
+        </div>
+      </div>
+
+      <div class="menu-grid">
+        <div class="cat reveal">
+          <h3><i>🍤</i> Cócteles</h3>
+          <ul>
+            <li>Camarón</li><li>Ostión</li><li>Pulpo</li><li>Campechana</li>
+            <li>Vuelve a la vida<small>Mezcla de mariscos</small></li>
+          </ul>
+        </div>
+        <div class="cat reveal">
+          <h3><i>🌮</i> Tacos</h3>
+          <ul>
+            <li>Pescado y camarón estilo Ensenada</li>
+            <li>Cámara Camarón</li>
+            <li>Camarón con crema de chipotle</li>
+            <li>Camarón o pulpo a la diabla</li>
+            <li>Marlín ahumado · Gobernador de marlín</li>
+            <li>Atún al chipotle · Pulpo Don Vicente</li>
+          </ul>
+        </div>
+        <div class="cat reveal">
+          <h3><i>🥑</i> Tostadas</h3>
+          <ul>
+            <li>Cámara Camarón</li>
+            <li>Camarón con crema de chipotle</li>
+            <li>Ceviche de pescado</li>
+            <li>Pulpo · Pulpo enamorado</li>
+            <li>Ostiones a la pimienta</li>
+            <li>Marlín ahumado · Atún al chipotle</li>
+          </ul>
+        </div>
+        <div class="cat reveal">
+          <h3><i>🥟</i> Entradas</h3>
+          <ul>
+            <li>Quesadillas de pescado, camarón o calamar</li>
+            <li>Empanadas horneadas<small>Camarón, marlín o atún</small></li>
+            <li>Tiritas de pescado</li>
+            <li>Gringa de marlín</li>
+            <li>Arroz con camarones</li>
+          </ul>
+        </div>
+        <div class="cat reveal">
+          <h3><i>🐟</i> Ceviches y platos fuertes</h3>
+          <ul>
+            <li>Ceviche de pescado estilo B.C.</li>
+            <li>Ceviche de camarón</li>
+            <li>Mojarra</li>
+            <li>Caldo de camarón</li>
+            <li>Camarones al coco</li>
+            <li>Paella</li>
+          </ul>
+        </div>
+        <div class="cat reveal">
+          <h3><i>🍺</i> Bebidas y postres</h3>
+          <ul>
+            <li>Micheladas y cerveza nacional</li>
+            <li>Clamato preparado</li>
+            <li>Aguas frescas y refrescos</li>
+            <li>Café americano y capuchino</li>
+            <li>Strudel con helado</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="menu-note">
+        <p>¿Quieres saber precios o el especial de hoy? Escríbenos y te mandamos el menú actualizado.</p>
+        <a class="btn btn-navy js-msg" href="#" data-ref="web_menu">Pedir menú con precios</a>
+      </div>
+
+      <div class="strip">
+        <img src="img/taco-gobernador.jpg" alt="Tacos de mariscos" loading="lazy">
+        <img src="img/tostada-chipotle.jpg" alt="Tostada de camarón con crema de chipotle" loading="lazy">
+        <img src="img/strudel.jpg" alt="Strudel con helado" loading="lazy">
+        <img src="img/cafe.jpg" alt="Capuchino" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section id="visitanos">
+    <div class="wrap">
+      <span class="eyebrow">Te esperamos</span>
+      <h2 class="section-title">Visítanos en Portales</h2>
+      <div class="visit-grid">
+        <div class="info">
+          <div class="info-card reveal"><div class="ico">📍</div><div><h3>Dirección</h3><p>Victor Hugo 88, Col. Portales, C.P. 03300, CDMX.<br>Entre Bélgica y Balboa.</p></div></div>
+          <div class="info-card reveal"><div class="ico">🕐</div><div><h3>Horario</h3><p>Lunes a domingo<br>11:00 a 19:00 h</p></div></div>
+          <div class="info-card reveal"><div class="ico">🚇</div><div><h3>Cómo llegar</h3><p>A unas cuadras del Metro Portales (Línea 2).</p></div></div>
+          <div class="btns">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Victor+Hugo+88,+Portales,+Benito+Ju%C3%A1rez,+03300+CDMX" target="_blank" rel="noopener">Cómo llegar</a>
+            <a class="btn btn-outline js-msg" href="#" data-ref="web_visita">Apartar mesa</a>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe title="Mapa: Cámara Camarón, Victor Hugo 88, Portales" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Victor+Hugo+88,+Portales,+Benito+Ju%C3%A1rez,+03300+Ciudad+de+M%C3%A9xico&output=embed"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="wrap">
+      <span class="eyebrow">Dudas</span>
+      <h2 class="section-title">Preguntas frecuentes</h2>
+      <div class="faq-list">
+        <details><summary>¿Cómo obtengo mi tostada gratis?</summary><p>Escríbenos por mensaje, dinos qué día nos visitas y te mandamos tu código. Al llegar lo muestras y listo. Aplica en tu primera visita, en la compra de otra tostada.</p></details>
+        <details><summary>¿Puedo apartar mesa?</summary><p>Sí. Mándanos mensaje con el día, la hora y cuántas personas vienen, y te apartamos lugar.</p></details>
+        <details><summary>¿Tienen servicio a domicilio?</summary><p>Sí. Escríbenos por mensaje para ver cobertura y hacer tu pedido.</p></details>
+        <details><summary>¿Dónde están y cuál es su horario?</summary><p>En Victor Hugo 88, colonia Portales, entre Bélgica y Balboa, a unas cuadras del Metro Portales. Abrimos de lunes a domingo de 11:00 a 19:00 h.</p></details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <img src="img/logo.png" alt="Cámara Camarón">
+        <p style="margin-top:14px;max-width:320px">Cocina del Mar. Marisquería familiar en la colonia Portales.</p>
+      </div>
+      <div>
+        <h4>Visítanos</h4>
+        <p>Victor Hugo 88, Col. Portales<br>C.P. 03300, CDMX<br>Lunes a domingo · 11:00 a 19:00 h</p>
+      </div>
+      <div>
+        <h4>Síguenos</h4>
+        <div class="socials">
+          <a href="https://www.instagram.com/mariscoscamaracamaron/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4ZM17.2 5.6a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4ZM21.9 7.1c-.1-1.6-.4-3-1.6-4.2S17.6 1.4 16 1.3C14.4 1.2 9.6 1.2 8 1.3c-1.6.1-3 .4-4.2 1.6S2.2 5.5 2.1 7.1C2 8.7 2 13.4 2.1 15c.1 1.6.4 3 1.6 4.2s2.6 1.5 4.2 1.6c1.6.1 6.4.1 8 0 1.6-.1 3-.4 4.2-1.6s1.5-2.6 1.6-4.2c.1-1.6.1-6.3 0-7.9Zm-2.2 9.6a3.2 3.2 0 0 1-1.8 1.8c-1.3.5-4.3.4-5.7.4s-4.4.1-5.7-.4a3.2 3.2 0 0 1-1.8-1.8c-.5-1.3-.4-4.3-.4-5.7s-.1-4.4.4-5.7a3.2 3.2 0 0 1 1.8-1.8c1.3-.5 4.3-.4 5.7-.4s4.4-.1 5.7.4a3.2 3.2 0 0 1 1.8 1.8c.5 1.3.4 4.3.4 5.7s.1 4.4-.4 5.7Z"/></svg></a>
+          <a href="https://www.facebook.com/113266168733227" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8.5V6.6c0-.8.2-1.3 1.4-1.3H17V2.1c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H7.5v3.6h2.8V22H14v-9.9h2.8l.4-3.6H14Z"/></svg></a>
+          <a class="js-wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp" hidden><svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-1 1.2-.4.2-.7.1a8.2 8.2 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.8.4 3.5 3.5 0 0 0-1.1 2.6 6.1 6.1 0 0 0 1.3 3.2 13.9 13.9 0 0 0 5.3 4.7c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3ZM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8ZM12 0a12 12 0 0 0-10.3 18L0 24l6.2-1.6A12 12 0 1 0 12 0Z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">© <span id="yr"></span> Cámara Camarón · Cocina del Mar</p>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn btn-primary js-msg" href="#" data-ref="web_mbar">🦐 Tostada gratis</a>
+  <a class="btn btn-navy" href="https://www.google.com/maps/dir/?api=1&destination=Victor+Hugo+88,+Portales,+Benito+Ju%C3%A1rez,+03300+CDMX" target="_blank" rel="noopener">📍 Cómo llegar</a>
+</div>
+
+<script>
+/* ===== CONFIGURACIÓN: edita solo esto ===== */
+const CONFIG = {
+  // Messenger de la página de Facebook (el "ref" sirve para medir de dónde vino cada mensaje en ManyChat / GoHighLevel)
+  messenger: 'https://m.me/113266168733227',
+  // WhatsApp: 52 + 10 dígitos, sin espacios. Déjalo vacío para ocultar el botón.
+  whatsapp: '',
+  waText: 'Hola, vi su página web y quiero mi tostada gratis 🦐'
+};
+/* ========================================== */
+
+document.querySelectorAll('.js-msg').forEach(a => {
+  const ref = a.dataset.ref || 'web';
+  a.href = CONFIG.whatsapp
+    ? `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.waText)}`
+    : `${CONFIG.messenger}?ref=${encodeURIComponent(ref)}`;
+  a.target = '_blank'; a.rel = 'noopener';
+});
+if (CONFIG.whatsapp) {
+  document.querySelectorAll('.js-wa').forEach(a => {
+    a.hidden = false;
+    a.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(CONFIG.waText)}`;
+  });
+}
+
+/* Carrusel del hero */
+(function(){
+  const slides=[...document.querySelectorAll('#slider .slide')], dots=document.getElementById('dots');
+  if(!slides.length) return;
+  let i=0, t;
+  slides.forEach((_,k)=>{const b=document.createElement('button');b.setAttribute('aria-label','Foto '+(k+1));b.onclick=()=>{go(k);start();};dots.appendChild(b);});
+  const go=k=>{slides[i].classList.remove('on');dots.children[i].classList.remove('on');i=(k+slides.length)%slides.length;
+    const img=slides[i].querySelector('img');img.style.animation='none';img.offsetHeight;img.style.animation='';
+    slides[i].classList.add('on');dots.children[i].classList.add('on');};
+  const start=()=>{clearInterval(t);t=setInterval(()=>go(i+1),4500);};
+  dots.children[0].classList.add('on');
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches) start();
+  /* Parallax suave */
+  const v=document.getElementById('heroVisual');
+  if(!matchMedia('(prefers-reduced-motion: reduce)').matches){
+    let ticking=false;
+    addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{const y=Math.min(scrollY,700);v.style.transform=`translateY(${y*.12}px)`;ticking=false;});},{passive:true});
+  }
+})();
+
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es => {
+  es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+}, { threshold: .12 }) : null;
+document.querySelectorAll('.reveal').forEach(el => io ? io.observe(el) : el.classList.add('in'));
+</script>
+</body>
+</html>
